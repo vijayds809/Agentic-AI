@@ -1,0 +1,69 @@
+suggestion_generation:
+  description: >
+    Generate actionable suggestions for resolving each classified support ticket.
+    The suggestions should be based on
+    - Issue Type: Tailor suggestions to the specific issue type identified.
+    - Historical Data: Use historical data such as resolution_time_minutes and
+      satisfaction_rating to inform suggestions.
+    - Customer Feedback: Incorporate feedback from customer_comments to
+      customize suggestions further.
+    The goal is to provide clear and actionable steps that the support team can
+    take to resolve each issue effectively and efficiently.
+  expected_output: >
+    A list of actionable suggestions linked to each classified support ticket, optimized
+    for quick and effective resolution.
+
+table_generation:
+  description: >
+    Generate tables that summarize key metrics and trends observed in the support data,
+    including
+    - Issue Classification Results: A table summarizing the frequency and priority levels of
+      different issue types.
+    - Agent Performance: A table showing the performance of
+      different agents
+      based on resolution_time_minutes and satisfaction_rating.
+    - Customer Satisfaction: A table summarizing customer satisfaction trends over time.
+    These tables serve as the foundation for generating charts in the next task.
+  expected_output: >
+    A set of tables summarizing the key metrics and trends observed in the support data,
+    ready to be used for chart generation.
+
+chart_generation:
+  description: >
+    Generate charts based on the tables created in the previous task. The charts
+    should include
+    - Issue Distribution: Charts showing the distribution of different issue types.
+    - Priority Levels: Charts illustrating the breakdown of tickets by priority.
+    - Resolution Times: A trend line showing average resolution times over past months.
+    - Customer Satisfaction: A bar chart or trend line depicting customer satisfaction trends over time.
+    - Agent Performance: Chart showing the performance of different agents
+      based on resolution_time_minutes and satisfaction_rating.
+    Save the charts as image files in the current working directory.
+    Ensure that the charts are saved as image files, and generate URLs for these
+    images that can be included in the final report.
+  expected_output: >
+    A set of charts that visually represent the key metrics and trends observed
+    in the support data, ready to be included in the final report.
+
+final_report_assembly:
+  description: >
+    Assemble the final report by integrating the tables and charts generated in
+    previous tasks. The report should include:
+    - Issue Classification Results: Overview of the types of issues reported,
+      their frequency, and priority levels presented in tables and charts.
+    - Agent Performance: Insights into the performance of the support agents
+      based on metrics like resolution_time_minutes and satisfaction_rating
+      and their trends over time presented in tables and charts.
+    - Customer Satisfaction: Summary of customer satisfaction trends over time
+      presented in tables and charts.
+    - Suggested Actions: A summary of actionable suggestions generated for
+      each category of issue.
+    The report should have tables and relevant charts side by side
+    with an appropriate size.
+    The report should be formatted for easy consumption by stakeholders,
+    providing valuable insights into the performance of support system
+    and areas for improvement.
+  expected_output: >
+    A comprehensive final report that integrates tables, charts, and actionable suggestions
+    into a single document formatted for stakeholders.
+    Do not add '``````markdown' to the report.
