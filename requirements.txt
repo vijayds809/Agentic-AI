@@ -1,4 +1,5 @@
-openai==1.97.0
-crewai==0.150.0
+crewai
 crewai_tools
+crewai_google_genai
 python-dotenv
+langchain_google_genai

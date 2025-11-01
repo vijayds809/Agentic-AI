@@ -8,6 +8,8 @@ from crewai_tools import FileReadTool
 from dotenv import load_dotenv 
 load_dotenv()
 
+os.environ
+
 csv_tool = FileReadTool(file_path = "./customer_issues.csv")
 
 api_key = os.getenv("AZURE_OPENAI_API_KEY")
@@ -40,17 +42,20 @@ tasks_config = config['tasks']
 
 suggestion_generation_agent = Agent(
     config = agents_config['suggestion_generation_agent'],
+    llm = llm,
     tools = [csv_tool]
 )
 
 reporting_agent = Agent(
     config = agents_config['reporting_agent'],
+    llm = llm,
     tools = [csv_tool]
 )
 
 chart_generation_agent = Agent(
     config = agents_config['chart_generation_agent'],
-    allow_code_execution = True                            #we need docker installations to execute this agent as it invloves code genration and execution in a contained environment(container)
+    llm = llm,
+    #allow_code_execution = True                            #we need docker installations to execute this agent as it invloves code genration and execution in a contained environment(container)
 )
 
 suggestion_generation = Task(
@@ -81,8 +86,8 @@ support_report_crew = Crew(
 )
 
 support_report_crew.test(n_iterations=1,eval_llm=llm)  #for testing the crew efficiency
-support_report_crew.train(n_iterations=1,filename="training.pkl")
+# support_report_crew.train(n_iterations=1,filename="training.pkl")
 
-rel = support_report_crew.kickoff()
+# rel = support_report_crew.kickoff()
 
-display(Markdown(rel.raw))
+# display(Markdown(rel.raw))
