@@ -1,0 +1,33 @@
+task_breakdown:
+  description: >
+    carefully analyze the {project_type} project and
+    break down them into individual tasks
+    define task scope, its timelines and ensure 
+    all are accountable for
+    {project_requirements} and 
+    Team Members :
+    {team_members}
+  expected_output: >
+    a list of tasks,objectives,timelines and deliverables
+    your final output must include tables and visualization in the form of charts, plots etc 
+    to the {project_type} project.
+
+time_resource_estimation:
+  description: > 
+    estimate time,resource and effort required for the
+    {project_type} project.
+    use historical data, previous experineces of you 
+    before coming to the final conclusions.
+  expected_output: >
+    a detailed estimation of time,resouces and estimation 
+    for each task for the {project_type} project.
+
+resource_allocation:
+  description: >
+    allocate the resources to the tasks in which
+    they are capable of and ensure their utilization 
+    is maximum
+  expected_output: >
+    a resource allocation chart showing which team members are
+    responsible for each task in the {project_type} project.
+
