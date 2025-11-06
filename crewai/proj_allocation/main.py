@@ -15,6 +15,13 @@ llm = LLM(
     verbose = True
 )
 
+llm_2 = LLM(
+    model="meta-llama/Meta-Llama-3-8B-Instruct",     # 👈 Open-source HF model
+    base_url="https://router.huggingface.co/v1",     # 👈 Hugging Face OpenAI-compatible router
+    api_key=os.getenv("HF_API_TOKEN"),               # 👈 Your Hugging Face access token
+    verbose=True
+)
+
 files = {
     'agents' : './Agents.yaml',
     'tasks' : './Tasks.yaml'

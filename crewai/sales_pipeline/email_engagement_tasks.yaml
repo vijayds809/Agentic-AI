@@ -1,0 +1,28 @@
+email_drafting:
+  description: >
+    Generate personalized email drafts for each qualified lead based on 
+    their profile, business context, and interest level. The content should 
+    highlight product benefits, address the lead's potential needs, and 
+    include a professional tone suitable for B2B communication.
+  expected_output: >
+    A JSON output containing:
+    - Lead Name
+    - Email Subject Line
+    - Greeting
+    - Personalized Message Body
+    - Product Value Proposition
+    - Call-to-Action
+    - Signature
+
+engagement_optimization:
+  description: >
+    Review the generated email drafts and improve them for maximum engagement. 
+    Suggest adjustments in subject lines, tone, and message structure. Recommend 
+    follow-up cadence or timing to increase reply probability.
+  expected_output: >
+    A JSON summary for each reviewed email containing:
+    - Lead Name
+    - Suggested Subject Line Refinements
+    - Recommended Tone or Structural Improvements
+    - Ideal Follow-up Timing (in days)
+    - Engagement Strategy Notes

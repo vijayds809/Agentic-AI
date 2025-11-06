@@ -1,0 +1,46 @@
+lead_data_collection:
+  description: >
+    Collect and analyze both personal and company-level information for each potential lead. 
+    This includes gathering public data such as job title, company website, business size, 
+    industry type, product focus, and any recent activities or signals that might indicate 
+    interest in our offering. The analysis should highlight key data points that could 
+    influence lead quality and business potential.
+  expected_output: >
+    A structured summary for each lead in JSON format containing:
+    - Lead Name
+    - Company Name
+    - Role/Title
+    - Company Industry
+    - Company Size
+    - Recent Activities or Posts
+    - Potential Relevance to Our Product
+
+
+cultural_fit_analysis:
+  description: >
+    Evaluate the cultural alignment between the lead’s company and our organization.
+    This includes analyzing company values, communication tone (from website or media), 
+    leadership style, diversity initiatives, and overall mission. Determine if both 
+    organizations share similar values, ethics, and approaches to innovation.
+  expected_output: >
+    A concise report for each lead in JSON format containing:
+    - Lead Name
+    - Company Name
+    - Observed Cultural Traits
+    - Comparison with Our Company Values
+    - Cultural Fit Assessment (High/Medium/Low)
+    - Justification for the Fit Rating
+
+lead_scoring_and_validation:
+  description: >
+    Aggregate all collected data and evaluate the lead using a scoring framework. 
+    Consider factors such as company relevance, engagement signals, cultural fit, 
+    and potential ROI. Validate the score based on data accuracy and consistency 
+    to ensure reliable prioritization of leads.
+  expected_output: >
+    A JSON output containing for each lead:
+    - Lead Name
+    - Company Name
+    - Lead Score (0–100)
+    - Score Breakdown by Criteria (Data Quality, Interest, Cultural Fit, ROI)
+    - Final Validation Status (Validated/Needs Review)
