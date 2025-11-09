@@ -1,0 +1,37 @@
+monitor_financial_news:
+  description: >
+    monitor and analysis the latest news pertaining to
+    the financial developments and generate summaries 
+    timely for decision making purposes that related to 
+    the {subject}
+  expected_output: >
+    a detailed summary of the latest news on
+    the {subject}
+
+analyze_market_data: 
+  description: > 
+    analyze market data and trends related to the {subject}
+    with a facous on latest news and patterns that can 
+    be helpful in content creation 
+  expected_output: >
+    a comprehensive report that highlights key developments 
+    and actionable insights.
+
+create_content:
+  description: >
+    create a content innovately that can be helpful 
+    for posting in social media platforms on the 
+    {subject}
+  expected_output: >
+    a collection of high-quality content related to 
+    the {subject} including blog posts  with 
+    appropiate hashtags
+  
+quality_assurance:
+  description:
+    refine and review the content created on the {subject}
+    to ensure it meets the higest quality standards and 
+    security.
+  expected_output:
+    a finalized set of contents pertaining to the {subject}
+    in markdown format.
