@@ -50,5 +50,5 @@ quality_assurance_agent:
     produced by Creative Content Director as a 
     Chief Content Officer
   allow_delegation: False 
-  verbose: False
+  verbose: True
 
