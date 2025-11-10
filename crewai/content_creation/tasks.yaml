@@ -34,4 +34,4 @@ quality_assurance:
     security.
   expected_output:
     a finalized set of contents pertaining to the {subject}
-    in markdown format.
+    in markdown format
