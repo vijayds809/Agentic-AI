@@ -135,5 +135,3 @@ with open("output.json","w",encoding = 'utf-8') as f:
 #     print('-'*50)
 
 # display(Markdown(result.pydantic['article']))
-print("success")
-print("ok")
