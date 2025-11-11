@@ -116,7 +116,7 @@ content_creation_crew = Crew(
     ],
     verbose=True
 )
-
+print("Crew Kickoff started")
 result = content_creation_crew.kickoff(inputs={
   'subject': 'Inflation in the US and the impact on the stock market in 2024'
 })
