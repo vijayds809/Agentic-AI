@@ -3,3 +3,5 @@ crewai_tools
 crewai_google_genai
 python-dotenv
 langchain_google_genai
+# llama
+llama-cpp-python
