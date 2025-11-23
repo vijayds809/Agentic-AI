@@ -1,4 +1,5 @@
 crewai
+langgraph
 crewai_tools
 crewai_google_genai
 python-dotenv
