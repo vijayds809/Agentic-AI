@@ -1,0 +1,55 @@
+create_research_plan:
+  description: >
+    Break down the {user_query} into a compact research plan.
+    Keep topics minimal and avoid long descriptions.
+    HARD LIMIT: Output must stay under 1,500 tokens.
+
+  expected_output: >
+    A compressed plan containing:
+    1) 3–7 main research topics
+    2) 2–4 key questions per topic
+    3) Short success criteria (max 5 bullets)
+
+gather_research_data:
+  description: >
+    Perform a focused web search strictly following the research plan.
+    Extract only essential facts and short summaries.
+    NEVER copy long text, quotes, big paragraphs, or HTML.
+    Summaries only. High compression.
+    HARD LIMIT: Full output must not exceed 4,000 tokens.
+
+  expected_output: >
+    A compressed research brief:
+    1) 3–6 short bullets per topic
+    2) Key stats & facts only (summarized)
+    3) Short citations (“Source: WHO, 2024”)
+    4) 1–2 line credibility note per source
+
+verify_information_quality:
+  description: >
+    Review the research data for factual accuracy and consistency.
+    DO NOT quote, restate, or rewrite any research content.
+    Only provide analysis, NOT summaries.
+    If input is large, compress even more.
+    HARD LIMIT: Output must stay under 1,000 tokens.
+
+  expected_output: >
+    A high-compression quality summary:
+    1) 3–8 bullets of reliable validated points (no restatements)
+    2) 3–8 bullets of questionable or weak evidence (no restatements)
+    3) Up to 3 bullets of missing evidence or gaps
+    4) Up to 3 bullets needing human review
+
+write_final_report:
+  description: >
+    Produce a short, clear final report addressing {user_query}.
+    Use only verified research—not the full research text—only its conclusions.
+    Keep the writing compact. If topics are large, summarize heavily.
+    HARD LIMIT: Output must stay under 5,000 tokens.
+
+  expected_output: >
+    A concise final report:
+    1) A short executive summary (6–10 lines max)
+    2) Compressed findings with citations (bullets preferred)
+    3) A short conclusion and recommendations
+
