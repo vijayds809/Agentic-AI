@@ -1,0 +1,14 @@
+[project]
+name = "p_c_vijay"
+version = "0.1.0"
+description = "A small encoding library"
+authors = [
+  { name="vijay kumar", email="vijayds809@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
