@@ -1,0 +1,55 @@
+
+# ==========================
+# Core Framework
+# ==========================
+#semantic-kernel==1.16.0
+#python-dotenv==1.0.1
+
+# ==========================
+# A2A SDK (OpenAI Agents)
+# ==========================
+a2a-sdk
+starlette==0.47.1
+sse-starlette==2.4.1
+httpx==0.28.1
+uvicorn[standard]==0.22.0
+
+# ==========================
+# Serialization & Models
+# ==========================
+pydantic==2.9.2
+pydantic-core==2.41.5
+pydantic-settings==2.10.1
+typing-extensions>=4.15.0
+
+# ==========================
+# Azure OpenAI
+# ==========================
+azure-ai-agents==1.1.0b4
+azure-core==1.35.0
+azure-identity==1.23.0
+requests==2.32.5
+
+# ==========================
+# Observability (Optional)
+# (add OpenTelemetry exporters if you need telemetry)
+# ==========================
+
+# ==========================
+# LangChain + LangGraph
+# (uncomment only if you actually use them)
+# langchain==0.3.26
+# langchain-core==0.3.69
+# langchain-community==0.3.27
+# langgraph==0.5.3
+# ==========================
+
+# ==========================
+# Utilities
+# ==========================
+orjson==3.11.0
+pyyaml==6.0.2
+protobuf==5.29.5
+tqdm==4.67.1
+regex==2024.11.6
+nest-asyncio==1.6.0
