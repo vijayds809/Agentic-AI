@@ -1,0 +1,15 @@
+# Core dependencies for the Telemetry project
+python-dotenv==1.1.0
+nest-asyncio==1.6.0
+
+langchain
+langchain_openai
+langgraph
+langgraph_supervisor
+langchain_mcp_adapters
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation-logging
+azure-monitor-opentelemetry-exporter
+openinference-instrumentation-langchain
