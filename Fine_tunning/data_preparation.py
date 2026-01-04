@@ -41,3 +41,8 @@ def tokenize_function(examples):
 tokenized_dataset = tokenized_dataset.add_column("labels",tokenized_dataset['input_ids'])
 split_dataset = tokenized_dataset.train_test_split(test_size = 0.2,shuffle = True,seed = 92)
 
+from huggingface_hub import notebook_login
+
+notebook_login()
+
+split_dataset.push_to_hub("Vijay-1432/instruction_tunned_llm_dataset")
